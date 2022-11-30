@@ -35,13 +35,17 @@ while True:
         if cardcounter(player1)>21 or cardcounter(dealer)>21:
             print("game is over:","",  "dealer got:",dealer,  cardcounter(dealer),"",  "you got:",player1, cardcounter(player1) )
             break
+        if cardcounter(dealer)<17:
+            drawr(dealer), print(dealer, cardcounter(dealer))
+            continue
         continue
     if ferst_question=="no":
         print(player1)
         print(cardcounter(player1))
         break
-    if cardcounter(player1)>21:
+    if cardcounter(dealer)>21:
         break
+
 
 
 
